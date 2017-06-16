@@ -103,7 +103,7 @@ public class Main2Activity extends AppCompatActivity {
                     break;
                 case R.id.ERegScodeAgain:
                     if(s.length()<6)warning+="密碼長度須大於6個字元";
-                    if(mEdtRegScode.toString().compareTo(mEdtRegScodeAgain.toString())!=0)
+                    if(mEdtRegScode.getText().toString().compareTo(mEdtRegScodeAgain.getText().toString())!=0)
                         warning+="、與輸入密碼不符";
                     mTxtWCodeAgain.setText(warning);
                     break;
